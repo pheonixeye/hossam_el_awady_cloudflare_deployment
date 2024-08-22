@@ -1,0 +1,85 @@
+.body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    /* .container {
+        grid-template-rows: 3fr 1fr 3fr;
+        grid-template-columns: 1fr 4fr 1fr;
+    } */
+
+}
+
+/* The animation code */
+@keyframes indicator {
+    0% {
+        border-color: white;
+    }
+
+    25% {
+        border-color: coral;
+    }
+
+    50% {
+        border-color: gray;
+    }
+
+    100% {
+        border-color: darkgoldenrod;
+    }
+}
+
+.indicator {
+    height: 150px;
+    width: 150px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    background-color: black;
+
+    border-radius: 50%;
+
+    border-width: 6px;
+    border-color: white;
+    border-style: solid;
+
+    animation-name: indicator;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+
+.text {
+    font-size: 5em;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background: -webkit-linear-gradient(rgb(248, 248, 102), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    width: 150px;
+    height: 150px;
+
+    margin: 0;
+
+    text-align: center;
+    margin-top: 30px;
+}
