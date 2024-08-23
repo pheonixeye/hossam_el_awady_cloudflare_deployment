@@ -99855,12 +99855,12 @@ B(a){var s=null
 return A.ap3(s,A.ei(A.cy(s,this.c,B.p,s,s,B.oA,s,1/0,s,s,s,s,s,1/0),0.8),!0,s)}}
 A.aiq.prototype={
 gjj(){return"localhost"},
-gjk(){return 8090},
+gjk(){return 8888},
 gjl(){return"http"},
 gji(){return B.Cf}}
 A.air.prototype={
 gji(){return B.Cf},
-gjj(){return"fit-stacee-proklinik-8ebc2ff2.koyeb.app"},
+gjj(){return"server.drkaz.dev"},
 gjk(){return 443},
 gjl(){return"https"}}
 A.afQ.prototype={
