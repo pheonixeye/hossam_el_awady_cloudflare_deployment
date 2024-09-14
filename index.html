@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!--
+
+<head>
+  <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
 
@@ -14,85 +15,92 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-    <base href="/" />
+  <base href="/" />
 
-    <meta charset="UTF-8" />
-    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
-    <meta name="description" content="Dr. Hossam El-Awady Website" />
+  <meta charset="UTF-8" />
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+  <meta name="description" content="Dr. Hossam El-Awady Website" />
 
-    <!-- iOS meta tags & icons -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="khalednabilwebsite" />
-    <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/ico" href="favicon.ico" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Dr.Hossam El-Awady Clinics</title>
-    <link rel="manifest" href="manifest.json" />
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="Dr.Hossam El-Awady" />
 
-    <script>
-      // The value below is injected by flutter build, do not touch.
-      const serviceWorkerVersion = "636624813";
-    </script>
-    <!-- This script adds the flutter initialization JS code -->
-    <script src="flutter.js" defer></script>
-  </head>
+  <!-- Favicon -->
+  <link rel="icon" type="image/ico" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Dr.Hossam El-Awady Clinics</title>
 
-  <body class="body">
-    <div class="container">
-      <div class="indicator">
-        <p class="text">HA</p>
-      </div>
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "3365334924";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
+
+<body class="body">
+  <div class="container">
+    <div class="indicator">
+      <p class="text">HA</p>
     </div>
-    <script>
-      window.addEventListener("load", function (ev) {
-        var loading = document.querySelector(".container");
-        // Download main.dart.js
-        _flutter.loader
-          .loadEntrypoint({
-            serviceWorker: {
-              serviceWorkerVersion: serviceWorkerVersion,
-            },
-          })
-          .then(function (engineInitializer) {
-            return engineInitializer.initializeEngine();
-          })
-          .then(function (appRunner) {
-            return appRunner.runApp();
-          })
-          .then(function (app) {
-            // Wait a few milliseconds so users can see the "zoooom" animation
-            // before getting rid of the "loading" div.
-            window.setTimeout(function () {
-              loading.remove();
-            }, 200);
-          });
-      });
-    </script>
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
+  </div>
+  <script>
+    window.addEventListener("load", function (ev) {
+      var loading = document.querySelector(".container");
+      // Download main.dart.js
+      _flutter.loader
+        .loadEntrypoint({
+          serviceWorker: {
+            serviceWorkerVersion: serviceWorkerVersion,
+          },
+        })
+        .then(function (engineInitializer) {
+          return engineInitializer.initializeEngine();
+        })
+        .then(function (appRunner) {
+          return appRunner.runApp();
+        })
+        .then(function (app) {
+          // Wait a few milliseconds so users can see the "zoooom" animation
+          // before getting rid of the "loading" div.
+          window.setTimeout(function () {
+            loading.remove();
+          }, 200);
+        });
+    });
+  </script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
 
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyDZuwb4OVPYGz22R7rnj0pLElCz9friV6k",
-        authDomain: "drkhalednabilwebsite.firebaseapp.com",
-        projectId: "drkhalednabilwebsite",
-        storageBucket: "drkhalednabilwebsite.appspot.com",
-        messagingSenderId: "795166343090",
-        appId: "1:795166343090:web:cbee4baf15401551ceeeab",
-        measurementId: "G-G9KLFRXP93",
-      };
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDZuwb4OVPYGz22R7rnj0pLElCz9friV6k",
+      authDomain: "drkhalednabilwebsite.firebaseapp.com",
+      projectId: "drkhalednabilwebsite",
+      storageBucket: "drkhalednabilwebsite.appspot.com",
+      messagingSenderId: "795166343090",
+      appId: "1:795166343090:web:cbee4baf15401551ceeeab",
+      measurementId: "G-G9KLFRXP93",
+    };
 
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script>
-  </body>
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+
 </html>
